@@ -1,12 +1,16 @@
 package project;
 
+import java.util.ArrayList;
+
 public class Aluno {
 	private String nome;
 	private String carro;
+	private ArrayList<Pagamentos> pagamentos;
 	
 	public Aluno(String nome, String carro) {
 		this.nome = nome;
 		this.carro = carro;
+		pagamentos = new ArrayList<Pagamentos>();
 	}
 
 	/**
@@ -35,6 +39,11 @@ public class Aluno {
 	 */
 	public void setCarro(String carro) {
 		this.carro = carro;
+	}
+	
+	private void guardaPagamento(Pagamentos newPag) {
+		pagamentos.add(newPag);
+
 	}
 
 	
