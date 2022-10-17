@@ -8,8 +8,15 @@ public class GereParque {
 		alunos = new ArrayList<Aluno>();
 	}
 	
+	/**
+	 * 
+	 * @param nome
+	 * @param carro
+	 * 
+	 * metodo para criar aluno
+	 */
 	public void criarAluno(String nome, String carro) 
-	{
+	{ 
 		int encontra = 0;
 		for(int i=0;i<alunos.size();i++) 
 		{
