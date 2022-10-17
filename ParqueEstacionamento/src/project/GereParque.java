@@ -8,11 +8,27 @@ public class GereParque {
 		alunos = new ArrayList<Aluno>();
 	}
 	
-	public void criarAluno(String nome, String carro) {
-		
+	public void criarAluno(String nome, String carro) 
+	{
+		int encontra = 0;
+		for(int i=0;i<alunos.size();i++) 
+		{
+			if(!nome.equalsIgnoreCase(alunos.get(i).getNome())) 
+			{
+				encontra = 1;
+			}
+				
+				
+		}
+		if(encontra == 1) 
+		{
+			Aluno a = new Aluno(nome,carro);
+			encontra = 0;
+		}
 	}
 	
-	public void adicionarPagamento(int tempo, String nome) {
+	public void adicionarPagamento(int tempo, String nome) 
+	{
 		
 	}
 	
