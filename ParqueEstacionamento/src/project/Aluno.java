@@ -41,7 +41,7 @@ public class Aluno {
 		this.carro = carro;
 	}
 	
-	private void guardaPagamento(Pagamentos newPag) {
+	public void guardaPagamento(Pagamentos newPag) {
 		pagamentos.add(newPag);
 
 	}
