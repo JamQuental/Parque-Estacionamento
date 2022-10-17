@@ -35,7 +35,7 @@ public class GereParque {
 		for (Aluno a : alunos) {
 			if (a.getNome().equalsIgnoreCase(nome)) {
 				double value = (tempo * pag) / 15;
-				a.gua
+				a.guardaPagamento(new Pagamentos(tempo,value,nome));
 			}
 		}
 	}
